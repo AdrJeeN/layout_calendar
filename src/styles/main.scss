@@ -19,7 +19,9 @@ body {
 }
 
 .calendar {
-  max-width: calc((($square-size) * $columns) + (($columns - 1) * $gap));
+  max-width: calc(
+    (($square-size) * $columns) + (($columns - 1) * $gap) + ($padding * 2)
+  );
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
